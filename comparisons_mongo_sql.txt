@@ -1,0 +1,34 @@
+Relational db        MongoDB
+Table                Collection
+Columns              Key
+Rows                 Document
+Cell                 Value
+Keys                 NONE
+
+How to create relations in MongoDB
+(Does not exist in the DB layer so developers must handle that)
+Approach 1:
+Generate keys in the application layer, put them in your objects and get corresponding elements in other collections by that key. 
+Con: Several round-trips
+
+Approach 2:
+Denormalization (Yes, it's a valid strategy for Mongo!)
+
+Pro: Fetching the data becomes faster (cause the data is grouped together)
+Con: Updating is slower and difficult (you have to remember to do it everywhere)
+
+
+MongoDB is schema-less per default
+$jsonSchema was however introduced
+
+No constraints in MongoDB so you can do this in the same collection:
+{
+    name: "Anders"
+}
+{
+    name: true
+    hoby: 123
+}
+{
+    hobby: ["coding"]
+}

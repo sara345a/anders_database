@@ -1,0 +1,30 @@
+MySQL                MongoDB
+SHOW DATABASES       show dbs
+USE [database_name]  use [database_name]  (either creates or uses it)
+
+
+MongoDB commands
+db.createCollection("dishes")
+
+db.getCollection("dishes").find({})
+vs.
+db.dishes.find({})
+
+db.dishes.update({ search query }, { update with })
+
+db.dishes.update({ id: 2 }, { $set: { name: "Pizza", delciousness: 32432 } })
+
+
+Term            MySQL                MongoDB
+CREATE          INSERT               insert
+READ            SELECT               find
+UPDATE          UPDATE               update     
+DELETE          DELETE               remove/deleteMany
+                TRUNCATE             remove
+
+
+
+Create a new database 
+Create a collection
+Do full CRUD on it
+

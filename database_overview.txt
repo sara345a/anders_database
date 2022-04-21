@@ -1,0 +1,61 @@
+---------------------------------------
+Relational Databases
+---------------------------------------
+
+SQL
+-------
+MySQL
+MariDB
+SQLite
+MSSQL
+Oracle MySQL
+
+PostgreSQL
+Cassandra
+
+
+
+---------------------------------------
+NoSQL
+---------------------------------------
+
+
+Key-value store
+---------------
+Redis (In-memory)
+
+
+Document Database
+------------------
+MongoDB
+
+Object Database
+----------------
+Realm
+
+
+Multi-model Database
+---------------------
+ArangoDB
+
+
+Multi-paradigm Database
+---------------------
+DynamoDB
+
+Graph
+------
+Neo4J
+
+Columnar Databases
+
+FireBase
+
+
+================
+
+Database models:
+
+ACID database = SQL
+BASE databases = Several NoSQL 
+Hybrid databse = MongoDB (Not fully ACID but supports Transasctions so not fully BASE either)
